@@ -1,0 +1,52 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs and runtime artifacts
+logs/*
+!logs/.gitkeep
+*.log
+
+# Evaluation reports
+reports/*
+!reports/.gitkeep
+
+# FAISS artifacts (keep structure docs, ignore heavy binaries)
+artifacts/faiss_index/*
+!artifacts/faiss_index/README.md
+
+# Data generated locally
+data/*
+!data/sample/
+!data/sample/events_sample.jsonl
+!data/eval/
+!data/eval/smoke_eval.jsonl
+
+# IDE / OS noise
+.DS_Store
+*.code-workspace
+.ipynb_checkpoints/
+
+# Project resources/docs not part of the runnable codebase
+ressources/
+matchs/
